@@ -1,6 +1,6 @@
 <?php
 function daysvmonth($month) {
-    if ($month == 2) {   //февраль
+    if ($month === 2) {   //февраль
         return 28;
     } elseif (in_array($month, [4, 6, 9, 11])) { //апрель июнь сентябрь ноябрь
         return 30;
@@ -18,4 +18,3 @@ if ($month >= 1 && $month <= 12) {
 } else {
     echo "Такого месяца нет-_-.\n";
 }
-?>

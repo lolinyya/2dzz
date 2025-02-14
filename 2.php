@@ -1,8 +1,8 @@
 <?php
 function treygolniki($a, $b, $c) {
-    if ($a == $b && $b == $c) {
+    if ($a === $b && $b === $c) {
         return "Равносторонний";
-    } elseif ($a == $b || $a == $c || $b == $c) {
+    } elseif ($a === $b || $a === $c || $b === $c) {
         return "Равнобедренный";
     } else {
         return "Разносторонний";
@@ -20,4 +20,3 @@ if ($a + $b > $c && $a + $c > $b && $b + $c > $a) {
 } else {
     echo "Тут такого треугольника и не бывало.\n";
 }
-?>
